@@ -1,0 +1,208 @@
+.contact-heading{
+    flex-wrap: wrap;
+    color: aliceblue;
+    display: flex;
+    justify-content:space-between; /* Space between elements */
+    align-items: center; /* Align items vertically centered */
+    width: 100%;
+}
+
+.contact-heading h1{
+    font-size: 50px;
+}
+.contact-heading h3 {
+    margin: 0; /* Remove default margins */
+    margin-right: 3rem;
+}
+
+
+.contact-heading h3 a {
+    color: white; /* Ensure link color matches the text */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.contact-heading h3 a:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+
+.contact-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 74, 74, 0.1);
+    width: 70%; 
+    height: 600px;
+    flex-direction: row;
+    gap:5px;
+    position: relative;
+}
+
+.contact-box img{
+    width:400px;
+    border-radius: 30px;
+}
+
+.contact-box p{
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    flex:1;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(86, 67, 104);
+}
+
+.contact-links-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(86, 67, 104);;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 74, 74, 0.1);
+    width: 50%; 
+    height: 300px;
+    flex-direction: row;
+    gap:20px;
+    top: 430px; 
+    right: 115px;
+    position: absolute;
+}
+
+.contact-links-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-links-details div {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px);
+}
+
+.contact-links-details img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.contact-links-details p {
+    margin-top: 0.5rem;
+    
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1300px){
+    .contact-box{
+        width: auto; 
+        height: auto;
+    }
+    .contact-links-box{
+        width: 600px;
+        height: 200px;
+        top: 600px; 
+        right: 50px;
+    }
+}
+
+@media screen and (max-width:850px){
+
+    .contact-heading{
+        font-size: 30px;
+    }
+    .contact-box{
+        width: auto; 
+        height: auto;
+    }
+    .contact-links-box{
+        width: 500px;
+        height: 200px;
+        top: 400px; 
+        right: 40px;
+    }
+    .contact-box img{
+        width:auto;
+        border-radius: 30px;
+    }
+    .contact-box p{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        flex:1;
+        font-size: 10px;
+        line-height: 1.6;
+        color: rgb(86, 67, 104);
+    }
+
+    .contact-links img {
+        width: auto;
+        height: auto;
+    }
+    
+    .contact-links p {
+        margin-top: 0.5rem;
+        font-size: 8px;
+        font-family: var(--font-family);
+        color: aliceblue;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .contact-heading{
+        font-size: 15px;
+    }
+
+    .contact-box{
+        width: auto; 
+        height: auto;
+    }
+    .contact-links-box{
+        position: relative;
+        width: auto; 
+        height: auto;
+        top: 20px; 
+        right: 0;
+    }
+    .contact-box img{
+        width:auto;
+        border-radius: 30px;
+    }
+    .contact-box p{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        flex:1;
+        font-size: 10px;
+        line-height: 1.6;
+        color: rgb(86, 67, 104);
+    }
+
+    .contact-links-details{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Add gap between items if needed */
+    }
+    .contact-links-details div {
+        flex: 0 0 calc(50% - 20px); /* Adjust width for 2 items per row on smaller screens */
+        max-width: calc(100% - 20px); /* Adjust max width for smaller screens */
+    }
+
+    .contact-links img {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .contact-links p {
+        margin-top: 0.5rem;
+        font-size: 8px;
+        font-family: var(--font-family);
+        color: aliceblue;
+    }
+}

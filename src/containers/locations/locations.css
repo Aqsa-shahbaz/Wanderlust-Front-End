@@ -1,0 +1,46 @@
+.locations__heading{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content:space-between;
+    color: aliceblue;
+}
+
+.locations__heading h1{
+    font-family: var(--font-family);
+    
+}
+.locations__heading h3 a {
+    color: white; /* Ensure link color matches the text */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.locations__heading h3 a:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+.locations__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.locations__container-images{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+@media screen and (max-width:990px) {
+    .locations__container{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .locations__container-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}

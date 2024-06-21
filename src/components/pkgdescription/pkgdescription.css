@@ -1,0 +1,206 @@
+.pkg__description{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-);
+}
+
+.pkg__description-heading{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.pkg__description h3 a {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+    color:aliceblue;
+    text-decoration: none; 
+}
+
+.pkg__description h3 a:hover {
+    text-decoration: underline;
+}
+
+.pkg__description-heading h1{
+    font-size: 62px;
+    line-height: 75px;
+    font-family: var(--font-family-);
+    font-weight: 500px;
+    color: burlywood;
+}
+
+.pkg__description-heading p{
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+.pkgdescription-box-content{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.pkgdescription-box{  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 74, 74, 0.1);
+    width: auto; 
+    height: auto;
+    gap:5px;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: var(--color-footer);
+}
+
+.pkgdescription-box h2{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-start;
+    color: aliceblue;
+}
+.pkgdescription-box img{
+    width: 100%;
+    height: auto;
+    background: var(--color-footer);
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.pkg__description-box ul{
+    list-style-type: circle;
+}
+.pkgdescription-box li{
+    margin-top: 1rem;
+    color:burlywood;
+    font-size: 14px;
+}
+
+.get__started{
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding : 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.get__started-content p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    color:white;
+}
+
+.get__started-content h3{
+    font-family:  var(--font-family);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 45px;
+    color:white;
+}
+
+.get__started-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.get__started-btn button{
+    background: #000000;
+    border-radius: 40px;
+    font-family:  var(--font-family);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color:white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width:900px){
+    .pkg__description-heading{
+        font-size: 14px;
+    }
+    .pkg__description-heading h1{
+        font-size: 35px;
+    }
+    .pkgdescription-box-content{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+    }
+    .pkgdescription-box{  
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(92, 74, 74, 0.1);
+        width: 100%; 
+        height: 100%;
+        gap:3px;
+        position: relative;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+        background: var(--color-footer);
+    }
+    .pkgdescription-box h2{
+        font-size: 20px;
+        display: flex;
+        flex-direction: flex-start;
+        align-items: flex-start;
+        color: aliceblue;
+    }
+    .pkgdescription-box img{
+        width: 70%;
+        background: var(--color-footer);
+        flex-wrap: wrap;
+        border-radius: 10px;
+        border: none;
+    }
+    .get__started{
+        flex-direction: column;
+    }
+
+    .get__started-btn{
+        margin: 2rem 0 0 ;
+    }
+}
+@media screen and (max-width: 550px){
+
+    .pkg__description-heading h1{
+        font-size: 20px;
+    }
+    .pkg__description-heading p{
+        font-size: 12px;
+    }
+    .get__started{
+        margin: 4rem 2rem;
+    }
+
+    .get__started-content h3{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .get__started-btn button{
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
